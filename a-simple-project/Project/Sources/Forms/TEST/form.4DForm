@@ -3,6 +3,7 @@
 		"version": "1",
 		"kind": "form"
 	},
+	"css": "form.css",
 	"windowSizingX": "variable",
 	"windowSizingY": "variable",
 	"windowMinWidth": 0,
@@ -42,8 +43,8 @@
 					"left": 20,
 					"width": 123,
 					"height": 173,
-					"picture": "Images/4d-logo.svg",
-					"pictureFormat": "scaled"
+					"pictureFormat": "scaled",
+					"class": "logo"
 				},
 				"text.logo": {
 					"type": "text",
@@ -51,10 +52,18 @@
 					"top": 206,
 					"left": 20,
 					"width": 123,
-					"height": 16
+					"height": 29,
+					"class": "logo"
 				}
 			}
 		}
 	],
-	"geometryStamp": 11
+	"geometryStamp": 16,
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {}
+		}
+	}
 }

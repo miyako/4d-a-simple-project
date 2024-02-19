@@ -1,0 +1,8 @@
+text.logo {
+	font-size: 24;
+	text-align: center;
+	font-weight: bold;
+}
+picture.logo {
+	picture: url("/RESOURCES/4d-logo.svg")
+}
