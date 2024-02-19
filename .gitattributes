@@ -1,1 +1,9 @@
+* text=auto
 
+*.4DProject         text      linguist-language=4d    diff=json
+*.4DCatalog         text      linguist-language=4d    diff=xml
+*.4DSettings        text      linguist-language=4d    diff=xml
+*.4DForm            text      linguist-language=4d    diff=json
+*.4dm               text      linguist-language=4d
+*.4lbp              text      linguist-language=4d    diff=xml
+*.4df               text      linguist-language=4d    diff=json
