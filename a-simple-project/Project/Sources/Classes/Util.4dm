@@ -4,12 +4,8 @@ Function fact($integer : Integer) : Integer
 	
 	var $returnValue : Integer
 	
-	$returnValue:=1
+	If ($integer=0)
+		return 1
+	End if 
 	
-	For ($i; 1; $integer)
-		
-		$returnValue:=$returnValue*$i
-		
-	End for 
-	
-	return $returnValue
+	return $integer*This:C1470.fact($integer-1)
