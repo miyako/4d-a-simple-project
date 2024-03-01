@@ -4,7 +4,12 @@
 ![version][version-url]
 ![license][license-url]
 
-GitHubで4Dプロジェクトを管理してみた。
+# 関連
+
+* [miyako/4d-tips-github-pages](https://github.com/miyako/4d-tips-github-pages)→GitHub Pages
+  * _includes
+  * assets
+  * _config.yml
 
 ```4d
 #DECLARE($params : Object)
