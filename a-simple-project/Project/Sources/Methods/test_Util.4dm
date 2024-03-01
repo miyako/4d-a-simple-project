@@ -1,8 +1,4 @@
 //%attributes = {}
-var $util : cs:C1710.Util
-
-$util:=cs:C1710.Util.new()
-
-$i:=$util.fact(1)
-$i:=$util.fact(2)
-$i:=$util.fact(5)
+var $UTest : cs:C1710.UTest.UTest
+$UTest:=cs:C1710.UTest.UTest.new()
+$UTest.run(OB Entries:C1720(cs:C1710)).show()
