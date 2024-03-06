@@ -4,9 +4,14 @@
 ![version][version-url]
 ![license][license-url]
 
+ # 動画
+
+* [GitHubで4Dプロジェクトを管理するには（Part 1）](https://www.youtube.com/watch?v=FhZ9LG_KcXY)
+  * [行終端を処理するようGitを設定する](https://docs.github.com/ja/get-started/getting-started-with-git/configuring-git-to-handle-line-endings)→[.gitattributes](https://github.com/miyako/4d-a-simple-project/blob/main/.gitattributes)
+
 # 資料
 
-* [行終端を処理するようGitを設定する](https://docs.github.com/ja/get-started/getting-started-with-git/configuring-git-to-handle-line-endings)
+* 
 
 # 関連
 
