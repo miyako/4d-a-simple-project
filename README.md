@@ -10,25 +10,5 @@
 
 # 関連
 
-* [miyako/4d-template-component-cicd](https://github.com/miyako/4d-template-component-cicd)→UTest
-
+* [miyako/4d-component-unit-test](https://github.com/miyako/4d-component-unit-test)→UTest
 * [miyako/4d-tips-github-pages](https://github.com/miyako/4d-tips-github-pages)→GitHub Pages
-  * _includes
-  * assets
-  * _config.yml
-
-```4d
-#DECLARE($params : Object)
-
-If (Count parameters=0)
-	
-	CALL WORKER(1; Current method name; {})
-	
-Else 
-	
-	var $window : Integer
-	$window:=Open form window("TEST")
-	DIALOG("TEST"; *)
-	
-End if 
-```
