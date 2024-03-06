@@ -10,6 +10,8 @@
 
 # 関連
 
+* [miyako/4d-template-component-cicd](https://github.com/miyako/4d-template-component-cicd)→UTest
+
 * [miyako/4d-tips-github-pages](https://github.com/miyako/4d-tips-github-pages)→GitHub Pages
   * _includes
   * assets
