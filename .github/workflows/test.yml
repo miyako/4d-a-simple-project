@@ -20,7 +20,7 @@ env:
   
 jobs:
 
-  get:
+  test:
     strategy:
       fail-fast: false
       matrix:
