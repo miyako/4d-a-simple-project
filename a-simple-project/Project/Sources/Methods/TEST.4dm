@@ -1,5 +1,5 @@
 //%attributes = {}
-//ON ERR CALL(Formula(generic_error_handler).source)
+ON ERR CALL:C155(Formula:C1597(generic_error_handler).source)
 
 If (Get application info:C1599.headless)
 	
@@ -19,4 +19,4 @@ Else
 	
 End if 
 
-//ON ERR CALL("")  
+ON ERR CALL:C155("")
