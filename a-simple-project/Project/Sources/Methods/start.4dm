@@ -1,5 +1,5 @@
 //%attributes = {}
-If (Get application info:C1599.headless) && (Application type:C494=6)
+If (Get application info:C1599.headless)
 	
 	ON ERR CALL:C155(Formula:C1597(generic_error_handler).source)
 	
