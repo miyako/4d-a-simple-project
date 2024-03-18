@@ -1,15 +1,15 @@
 name: Run Tests
 
 on:
-#  push:
-#    branches:
-#    - main
-#    paths:
-#      - '*/Project/Sources/**/*.4dm'
-#      - '*/Project/Sources/*/*.4DForm'
-#      - '*/Project/Sources/*.4DCatalog'
+  push:
+    branches:
+    - main
+    paths:
+      - '*/Project/Sources/**/*.4dm'
+      - '*/Project/Sources/*/*.4DForm'
+      - '*/Project/Sources/*.4DCatalog'
   workflow_dispatch:
-#  workflow_call:      
+  workflow_call:      
  
 env:
   project_path: a-simple-project/Project/a-simple-project.4DProject
@@ -17,6 +17,7 @@ env:
   skip_onstartup: true
   create_data: true
   dataless: false
+  data: ''
   
 jobs:
 
@@ -54,6 +55,7 @@ jobs:
           skip_onstartup: ${{ env.skip_onstartup }}  
           create_data: ${{ env.create_data }}  
           dataless: ${{ env.dataless }}  
+          data: ${{ env.data }}  
 
       - name: print results
         run: |  
