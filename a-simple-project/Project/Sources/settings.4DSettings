@@ -1,7 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?><preferences stamp="5">
+<?xml version="1.0" encoding="UTF-8"?><preferences stamp="6">
 	<com.4d>
 		<interface>
 			<user sdi_application="true" splash_screen="false"/>
 		</interface>
+		<compiler>
+			<options target="all"/>
+			<typage default_for_button="2" default_for_numeric="1"/>
+		</compiler>
 	</com.4d>
 </preferences>
