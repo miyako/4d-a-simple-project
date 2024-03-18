@@ -1,15 +1,15 @@
 name: Run Tests
 
 on:
-  push:
-    branches:
-    - main
-    paths:
-      - '*/Project/Sources/**/*.4dm'
-      - '*/Project/Sources/*/*.4DForm'
-      - '*/Project/Sources/*.4DCatalog'
+#  push:
+#    branches:
+#    - main
+#    paths:
+#      - '*/Project/Sources/**/*.4dm'
+#      - '*/Project/Sources/*/*.4DForm'
+#      - '*/Project/Sources/*.4DCatalog'
   workflow_dispatch:
-  workflow_call:      
+#  workflow_call:      
  
 env:
   project_path: a-simple-project/Project/a-simple-project.4DProject
@@ -45,7 +45,7 @@ jobs:
           build: ${{ matrix.TOOL4D_BUILD }}
 
       - name: run tests
-        uses: miyako/4D/.github/actions/deployment-run-tests@v1
+        uses: miyako/4D/.github/actions/development-run-tests@v1
         with:          
           tool4d_executable_path: ${{ steps.get.outputs.tool4d_executable_path }}
           project_path: ${{ env.project_path }}  
