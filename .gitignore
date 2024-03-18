@@ -1,7 +1,6 @@
 a-simple-project/Data/*
 a-simple-project/Project/DerivedData/*
 a-simple-project/userPreferences.*
-a-simple-project/Components/*
 stderr.txt
 stdout.txt
 a-simple-project/Libraries/lib4d-arm64.dylib
