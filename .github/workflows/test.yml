@@ -45,6 +45,7 @@ jobs:
           build: ${{ matrix.TOOL4D_BUILD }}
 
       - name: run tests
+        id: tests
         uses: miyako/4D/.github/actions/development-run-tests@v1
         with:          
           tool4d_executable_path: ${{ steps.get.outputs.tool4d_executable_path }}
@@ -53,3 +54,15 @@ jobs:
           skip_onstartup: ${{ env.skip_onstartup }}  
           create_data: ${{ env.create_data }}  
           dataless: ${{ env.dataless }}  
+
+      - name: print results
+        run: |  
+          echo "stdout: ${stdout}"
+          echo "stderr: ${stderr}"
+          if [[ "${stderr}" == *failed ]]; then
+          echo "failed"; exit 1
+          fi
+        env:
+          stderr: ${{ steps.tests.outputs.stderr }}
+          stdout: ${{ steps.tests.outputs.stdout }}
+          
