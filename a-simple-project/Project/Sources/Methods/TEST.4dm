@@ -1,7 +1,7 @@
 //%attributes = {}
-ON ERR CALL:C155(Formula:C1597(generic_error_handler).source)
-
 If (Get application info:C1599.headless)
+	
+	ON ERR CALL:C155(Formula:C1597(generic_error_handler).source)
 	
 	var $UTest : cs:C1710.UTest.UTest
 	
@@ -13,10 +13,10 @@ If (Get application info:C1599.headless)
 	
 	LOG EVENT:C667(Into system standard outputs:K38:9; $stdErr; Error message:K38:3)
 	
+	ON ERR CALL:C155("")
+	
 Else 
 	
 	test
 	
 End if 
-
-ON ERR CALL:C155("")
