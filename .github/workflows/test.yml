@@ -57,12 +57,10 @@ jobs:
 
       - name: print results
         run: |  
-          echo "stdout: ${stdout}"
           echo "stderr: ${stderr}"
           if [[ "${stderr}" == *failed ]]; then
           echo "failed"; exit 1
           fi
         env:
           stderr: ${{ steps.tests.outputs.stderr }}
-          stdout: ${{ steps.tests.outputs.stdout }}
         shell: bash  
