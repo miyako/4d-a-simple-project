@@ -65,4 +65,4 @@ jobs:
         env:
           stderr: ${{ steps.tests.outputs.stderr }}
           stdout: ${{ steps.tests.outputs.stdout }}
-          
+        shell: bash  
