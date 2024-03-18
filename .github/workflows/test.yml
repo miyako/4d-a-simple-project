@@ -15,8 +15,8 @@ env:
   project_path: a-simple-project/Project/a-simple-project.4DProject
   startup_method: start
   skip_onstartup: true
-  create_data: false
-  dataless: true
+  create_data: true
+  dataless: false
   
 jobs:
 
@@ -46,7 +46,7 @@ jobs:
 
       - name: run tests
         id: tests
-        uses: miyako/4D/.github/actions/development-run-tests@v1
+        uses: miyako/4D/.github/actions/tool4d-execute@v1
         with:          
           tool4d_executable_path: ${{ steps.get.outputs.tool4d_executable_path }}
           project_path: ${{ env.project_path }}  
