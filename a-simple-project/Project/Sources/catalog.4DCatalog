@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE base SYSTEM "http://www.4d.com/dtd/2007/base.dtd" >
-<base name="a-simple-project" uuid="1C49F920E7C544B3A34B47B33B52E5D1" collation_locale="en">
+<base name="a-simple-project" uuid="1C49F920E7C544B3A34B47B33B52E5D1" collation_locale="ja">
 	<schema name="DEFAULT_SCHEMA"/>
 	<base_extra>
 		<journal_file journal_file_enabled="false"/>
