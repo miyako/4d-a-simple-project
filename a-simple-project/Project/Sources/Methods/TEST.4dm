@@ -9,7 +9,7 @@ If (Get application info:C1599.headless)
 	
 	$UTest.run(OB Entries:C1720(cs:C1710))
 	
-	$stdErr:="Unit tests "+($UTest.UTest_result.length#$UTest.UTest_result.count("success"; True:C214) ? "failed" : "passed")
+	$stdErr:="Unit tests "+($UTest.UTest_result.length#$UTest.UTest_result.countValues(True:C214; "success") ? "failed" : "passed")
 	
 	LOG EVENT:C667(Into system standard outputs:K38:9; $stdErr; Error message:K38:3)
 	
