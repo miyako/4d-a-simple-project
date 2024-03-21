@@ -14,7 +14,7 @@ Function fact()
 	This:C1470.UTest\
 		.describe("test with 2")\
 		.expect($result)\
-		.toBe(2)
+		.toBe(3)
 	
 	$result:=This:C1470.sut.fact(3)
 	This:C1470.UTest\
