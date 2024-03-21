@@ -17,6 +17,6 @@ If (Get application info:C1599.headless)
 	
 Else 
 	
-	logo
+	test_UTest
 	
 End if 
